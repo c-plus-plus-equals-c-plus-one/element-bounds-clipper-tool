@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Extension Name",
+  "description": "A description of the Extension",
+  "version": "1.0",
+  "externally_connectable": {
+    "ids": ["nohakcbnnblokoibfhemaodnajcgefbm"]
+  },
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "index.js"
+  },
+  "content_scripts": [{
+    "css": ["./index.css"],
+    "js": ["bg.js"],
+    "matches": ["<all_urls>"]
+  }],
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "webRequest",
+    "tabs",
+    "background"
+  ]
+}
