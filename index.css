@@ -1,0 +1,7 @@
+#element-bounds-screenshoter {
+	 pointer-events: none;
+	 z-index: 100000;
+	 display: block;
+	 position: absolute;
+	 outline: 3px solid green;
+}
